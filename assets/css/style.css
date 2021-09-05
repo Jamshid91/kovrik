@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.rugs-page {
+    padding: 50px 0;
+}
+
+/* Варианты Комлектации */
+.rugs-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title .title_text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.rugs-page .rugs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.rugs .rugs-list {
+    width: 250px;
+    height: 390px;
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.2);
+    padding: 25px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.rugs .rugs-list:hover {
+    -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.2);
+}
+
+.rugs-list .rugs-list_title-text {
+    text-align: center;
+    font-weight: 700;
+}
+
+.rugs-list .rugs-list_img {
+    max-width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rugs-list_info-text {
+    font-size: 18px;
+
+}
+
+.technical-features {
+    margin-top: 50px;
+}
+
+.technical-features-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* Как сделать заказ */
+.make-order {
+    margin-top: 50px;
+}
+
+.make-order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.make-order_info-text {
+    text-align: center;
+    margin-top: 10px;
+}
+.make-order-item .make-order_wheel-img {
+    width: 200px;
+}
+.make-order-item .make-order_arrow-img {
+    width: 120px;
+    margin-bottom: 50px !important;
+}
+
+/* гарантия от производителя */
+.guarantee {
+    margin-top: 50px;
+}
+
+.guarantee-item {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.guarantee-list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+
+.guarantee-info {
+    max-width: 650px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.guarantee-list_text {
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+.guarantee-photo {
+    width: 500px;
+    height: 350px;
+    border: 5px solid #8e44ad;
+    position: relative;
+}
+.guarantee-photo_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.protection-icon {
+    width: 30px;
+}
+
+/* Часто задаваемые вопросы */
+.questions {
+    margin-top: 50px;
+}
+
+.questions-item {
+    margin-top: 100px;
+}
+
+.questions-list {
+    width: 100%;
+    max-height: 60px;
+    overflow-y: hidden;
+    border-bottom: 1px solid #dfe6e9;
+    transition: .5s;
+    margin-top: 20px;
+    position: relative;
+}
+
+.questions-list .questions-list-title{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.questions-list-title_text {
+    cursor: pointer;
+    
+}
+
+.questions-list-title_btn {
+    width: 25px;
+    height: 25px;
+    background-color: #dfe6e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.questions-list_info-text {
+    margin-top: 20px;
+}
+
+.open_questions-info {
+    max-height: 250px;
+    padding-bottom: 15px;
+}
+
+.questions-list_arrow {
+    transition: .3s;  
+}
+
+.rotateIcon {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 50px;
+    }
+    .rugs {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .rugs .rugs-list {
+        width: 35% !important;
+        margin: 0 20px;
+    }
+    .rugs .rugs-list:nth-child(1),
+    .rugs .rugs-list:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .technical-features-info_img {
+        width: 100%;
+    }
+
+
+.make-order-item {
+    align-items: start;
+}
+.make-order_info-text {
+    font-size: 14px;
+}
+
+.wheel_img {
+    width: 200px;
+    text-align: center;
+}
+.make-order-item .make-order_wheel-img {
+    width: 120px;
+}
+.make-order-item .make-order_arrow-img {
+    width: 50px;
+    margin-top: 50px;
+}
+
+.guarantee-info {
+    margin-left: 20px;
+}
+.guarantee-list_text {
+    margin-left: 15px;
+    font-size: 18px;
+}
+.protection-icon {
+    width: 25px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .rugs {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .rugs .rugs-list {
+        width: 40% !important;
+        margin: 0 10px;
+    }
+    .rugs .rugs-list:nth-child(1),
+    .rugs .rugs-list:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .make-order-item {
+        align-items: start;
+    }
+    .make-order_info-text {
+        font-size: 12px;
+    }
+    
+    .wheel_img {
+        width: 200px;
+        text-align: center;
+    }
+    .make-order-item .make-order_wheel-img {
+        width: 100px;
+    }
+    .make-order-item .make-order_arrow-img {
+        width: 50px;
+        margin-top: 40px;
+    }
+
+    
+    .guarantee-item {
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .guarantee-list {
+        margin-bottom: 10px;
+    }
+    
+    
+    .guarantee-info {
+        margin-left: 20px;
+    }
+    .guarantee-list_text {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    
+    .guarantee-photo {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .protection-icon {
+        width: 20px;
+    }
+    
+.questions-item {
+    margin-top: 50px;
+}
+.questions-list_info-text {
+    margin-top: 18px !important;
+}
+}
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+    .rugs {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .rugs .rugs-list {
+        width: 60% !important;
+        margin: 0 10px;
+        margin-bottom: 20px !important;
+    }
+    .rugs .rugs-list:nth-child(1),
+    .rugs .rugs-list:nth-child(2) {
+        margin-bottom: 0px;
+    }
+
+    
+    .make-order-item {
+        align-items: center;
+        flex-direction: column;
+    }
+    .make-order-list {
+        height: auto;
+    }
+    .arrow_img {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .make-order_info-text {
+        font-size: 16px;
+    }
+    
+    .wheel_img {
+        width: 200px;
+        text-align: center;
+    }
+    .make-order-item .make-order_wheel-img {
+        width: 150px;
+    }
+    .make-order-item .make-order_arrow-img {
+        width: 50px;
+        margin-top: 40px;
+        transform: rotate(90deg);
+    }
+    .guarantee-item {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column !important;
+    }
+    
+    .guarantee-list {
+        margin-bottom: 15px;
+    }
+    
+    .guarantee-info {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .guarantee-list_text {
+        font-size: 18px;
+    }
+    
+    .guarantee-photo {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .protection-icon {
+        width: 30px;
+    }
+    .questions-list-title_text {
+        font-size: 18px;
+		    line-height:20px
+    }	
+}
+@media screen and (max-width: 468px) {
+
+    .rugs .rugs-list {
+        width: 100% !important;
+        margin: 0 10px;
+        margin-bottom: 20px !important;
+    }
+     .questions-list-title {
+        margin-top: 1px
+					font-size: 18px;
+		    line-height:20px
+!important;
+     }
+    
+    .questions-list-title_text {
+        font-size: 18px;
+		    line-height:20px
+    }
+    .questions-list_info-text {
+        margin-top: 13px !important;
+    }
+    .questions-list-title_btn {
+        margin-top: 0px;
+    }
